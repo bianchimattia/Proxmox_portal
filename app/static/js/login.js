@@ -89,7 +89,7 @@ class MinimalLoginForm {
         }, 200);
     }
     
-    async handleSubmit(e) {
+    /*async handleSubmit(e) {
         e.preventDefault();
         
         const isEmailValid = this.validateEmail();
@@ -112,14 +112,14 @@ class MinimalLoginForm {
         } finally {
             this.setLoading(false);
         }
-    }
+    }*/
     
     setLoading(loading) {
         this.submitButton.classList.toggle('loading', loading);
         this.submitButton.disabled = loading;
     }
     
-    showSuccess() {
+    /*showSuccess() {
         this.form.style.display = 'none';
         this.successMessage.classList.add('show');
         
@@ -128,7 +128,7 @@ class MinimalLoginForm {
             console.log('Redirecting to dashboard...');
             // window.location.href = '/dashboard';
         }, 2000);
-    }
+    }*/
 }
 
 // Initialize the form when DOM is loaded

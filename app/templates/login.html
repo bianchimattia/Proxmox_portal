@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="login-container-wrapper">
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
@@ -7,7 +8,7 @@
                 <p>Effettua il login per continuare</p>
             </div>
             
-            <form class="login-form" id="loginForm" method="POST" action="{{ url_for('auth.login') }}" novalidate>
+            <form class="login-form" id="loginForm" method="POST" action="{{ url_for('auth.login') }}">
                 <div class="form-group">
                     <div class="input-wrapper">
                         <input type="email" id="email" name="email" required autocomplete="email">
@@ -37,13 +38,12 @@
                 <p>Non hai un account? <a href="#">Creane uno</a></p>
             </div>
 
-            <div class="success-message" id="successMessage">
+            <!--<div class="success-message" id="successMessage">
                 <div class="success-icon">✓</div>
                 <h3>Bentornato!</h3>
                 <p>Reindirizzamento alla tua dashboard...</p>
-            </div>
+            </div>-->
         </div>
     </div>
+</div>
 {% endblock %}
-</body>
-</html>
